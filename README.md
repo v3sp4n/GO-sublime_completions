@@ -8,7 +8,14 @@ https://www.sublimetext.com/docs/completions.html
   <li>time</li>
   <li>fmt</li>
   <li>os</li>
+  <li>os/exec</li>
+  <li>io</li>
+  <li>ioutil</li>
+  <li>math</li>
+  <li>math/rand</li>
+  <li>sort</li>
 </ul>
+last update 02.10.2023
 
 <H1>install</H1>
 put .sublime-completions file in <b>Sublime Text\Packages\</b> ( Sublime Text\Packages\GO.sublime-completions )
