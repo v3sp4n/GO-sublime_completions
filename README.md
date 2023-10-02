@@ -7,4 +7,6 @@ https://www.sublimetext.com/docs/completions.html
 put .sublime-completions file in <b>Sublime Text\Packages\</b> ( Sublime Text\Packages\GO.sublime-completions )
 <br>
 
+![image](https://github.com/v3sp4n/GO-sublime_completions/assets/57196133/f787335a-d6f5-4511-862d-37994ca84a8f)
+
 
