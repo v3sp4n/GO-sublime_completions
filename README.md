@@ -5,4 +5,5 @@ https://www.sublimetext.com/docs/completions.html
 
 <H1>install</H1>
 put .sublime-completions file in <b>Sublime Text\Packages\</b> ( Sublime Text\Packages\GO.sublime-completions )
-![image](https://github.com/v3sp4n/GO-sublime_completions/assets/57196133/e24bb876-348c-44de-bb2f-d5492ea2b083)
+![image](https://github.com/v3sp4n/GO-sublime_completions/assets/57196133/9f7f713a-47ba-4f36-94d6-3fd3f239bac3)
+
