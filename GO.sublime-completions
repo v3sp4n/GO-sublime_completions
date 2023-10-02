@@ -1,0 +1,1021 @@
+{
+   "scope":"source.go",
+   "completions":[
+      {
+         "trigger":"os.Chdir",
+         "contents":"os.Chdir(${1:dir string})",
+         "details":"return  error",
+         "annotation":"(dir string)"
+      },
+      {
+         "trigger":"os.Chmod",
+         "contents":"os.Chmod(${1:name string, mode FileMode})",
+         "details":"return  error",
+         "annotation":"(name string, mode FileMode)"
+      },
+      {
+         "trigger":"os.Chown",
+         "contents":"os.Chown(${1:name string, uid, gid int})",
+         "details":"return  error",
+         "annotation":"(name string, uid, gid int)"
+      },
+      {
+         "trigger":"os.Chtimes",
+         "contents":"os.Chtimes(${1:name string, atime time.Time, mtime time.Time})",
+         "details":"return  error",
+         "annotation":"(name string, atime time.Time, mtime time.Time)"
+      },
+      {
+         "trigger":"os.Clearenv",
+         "contents":"os.Clearenv()",
+         "details":"return ",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.DirFS",
+         "contents":"os.DirFS(${1:dir string})",
+         "details":"return  fs.FS",
+         "annotation":"(dir string)"
+      },
+      {
+         "trigger":"os.Environ",
+         "contents":"os.Environ()",
+         "details":"return  []string",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Executable",
+         "contents":"os.Executable()",
+         "details":"return  (string, error)",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Exit",
+         "contents":"os.Exit(${1:code int})",
+         "details":"return ",
+         "annotation":"(code int)"
+      },
+      {
+         "trigger":"os.Expand",
+         "contents":"os.Expand(${1:s string, mapping func(string})",
+         "details":"return  string) string",
+         "annotation":"(s string, mapping func(string)"
+      },
+      {
+         "trigger":"os.ExpandEnv",
+         "contents":"os.ExpandEnv(${1:s string})",
+         "details":"return  string",
+         "annotation":"(s string)"
+      },
+      {
+         "trigger":"os.Getegid",
+         "contents":"os.Getegid()",
+         "details":"return  int",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Getenv",
+         "contents":"os.Getenv(${1:key string})",
+         "details":"return  string",
+         "annotation":"(key string)"
+      },
+      {
+         "trigger":"os.Geteuid",
+         "contents":"os.Geteuid()",
+         "details":"return  int",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Getgid",
+         "contents":"os.Getgid()",
+         "details":"return  int",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Getgroups",
+         "contents":"os.Getgroups()",
+         "details":"return  ([]int, error)",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Getpagesize",
+         "contents":"os.Getpagesize()",
+         "details":"return  int",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Getpid",
+         "contents":"os.Getpid()",
+         "details":"return  int",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Getppid",
+         "contents":"os.Getppid()",
+         "details":"return  int",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Getuid",
+         "contents":"os.Getuid()",
+         "details":"return  int",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Getwd",
+         "contents":"os.Getwd()",
+         "details":"return  (dir string, err error)",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Hostname",
+         "contents":"os.Hostname()",
+         "details":"return  (name string, err error)",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.IsExist",
+         "contents":"os.IsExist(${1:err error})",
+         "details":"return  bool",
+         "annotation":"(err error)"
+      },
+      {
+         "trigger":"os.IsNotExist",
+         "contents":"os.IsNotExist(${1:err error})",
+         "details":"return  bool",
+         "annotation":"(err error)"
+      },
+      {
+         "trigger":"os.IsPathSeparator",
+         "contents":"os.IsPathSeparator(${1:c uint8})",
+         "details":"return  bool",
+         "annotation":"(c uint8)"
+      },
+      {
+         "trigger":"os.IsPermission",
+         "contents":"os.IsPermission(${1:err error})",
+         "details":"return  bool",
+         "annotation":"(err error)"
+      },
+      {
+         "trigger":"os.IsTimeout",
+         "contents":"os.IsTimeout(${1:err error})",
+         "details":"return  bool",
+         "annotation":"(err error)"
+      },
+      {
+         "trigger":"os.Lchown",
+         "contents":"os.Lchown(${1:name string, uid, gid int})",
+         "details":"return  error",
+         "annotation":"(name string, uid, gid int)"
+      },
+      {
+         "trigger":"os.Link",
+         "contents":"os.Link(${1:oldname, newname string})",
+         "details":"return  error",
+         "annotation":"(oldname, newname string)"
+      },
+      {
+         "trigger":"os.LookupEnv",
+         "contents":"os.LookupEnv(${1:key string})",
+         "details":"return  (string, bool)",
+         "annotation":"(key string)"
+      },
+      {
+         "trigger":"os.Mkdir",
+         "contents":"os.Mkdir(${1:name string, perm FileMode})",
+         "details":"return  error",
+         "annotation":"(name string, perm FileMode)"
+      },
+      {
+         "trigger":"os.MkdirAll",
+         "contents":"os.MkdirAll(${1:path string, perm FileMode})",
+         "details":"return  error",
+         "annotation":"(path string, perm FileMode)"
+      },
+      {
+         "trigger":"os.MkdirTemp",
+         "contents":"os.MkdirTemp(${1:dir, pattern string})",
+         "details":"return  (string, error)",
+         "annotation":"(dir, pattern string)"
+      },
+      {
+         "trigger":"os.NewSyscallError",
+         "contents":"os.NewSyscallError(${1:syscall string, err error})",
+         "details":"return  error",
+         "annotation":"(syscall string, err error)"
+      },
+      {
+         "trigger":"os.Pipe",
+         "contents":"os.Pipe()",
+         "details":"return  (r *File, w *File, err error)",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.ReadFile",
+         "contents":"os.ReadFile(${1:name string})",
+         "details":"return  ([]byte, error)",
+         "annotation":"(name string)"
+      },
+      {
+         "trigger":"os.Readlink",
+         "contents":"os.Readlink(${1:name string})",
+         "details":"return  (string, error)",
+         "annotation":"(name string)"
+      },
+      {
+         "trigger":"os.Remove",
+         "contents":"os.Remove(${1:name string})",
+         "details":"return  error",
+         "annotation":"(name string)"
+      },
+      {
+         "trigger":"os.RemoveAll",
+         "contents":"os.RemoveAll(${1:path string})",
+         "details":"return  error",
+         "annotation":"(path string)"
+      },
+      {
+         "trigger":"os.Rename",
+         "contents":"os.Rename(${1:oldpath, newpath string})",
+         "details":"return  error",
+         "annotation":"(oldpath, newpath string)"
+      },
+      {
+         "trigger":"os.SameFile",
+         "contents":"os.SameFile(${1:fi1, fi2 FileInfo})",
+         "details":"return  bool",
+         "annotation":"(fi1, fi2 FileInfo)"
+      },
+      {
+         "trigger":"os.Setenv",
+         "contents":"os.Setenv(${1:key, value string})",
+         "details":"return  error",
+         "annotation":"(key, value string)"
+      },
+      {
+         "trigger":"os.Symlink",
+         "contents":"os.Symlink(${1:oldname, newname string})",
+         "details":"return  error",
+         "annotation":"(oldname, newname string)"
+      },
+      {
+         "trigger":"os.TempDir",
+         "contents":"os.TempDir()",
+         "details":"return  string",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.Truncate",
+         "contents":"os.Truncate(${1:name string, size int64})",
+         "details":"return  error",
+         "annotation":"(name string, size int64)"
+      },
+      {
+         "trigger":"os.Unsetenv",
+         "contents":"os.Unsetenv(${1:key string})",
+         "details":"return  error",
+         "annotation":"(key string)"
+      },
+      {
+         "trigger":"os.UserCacheDir",
+         "contents":"os.UserCacheDir()",
+         "details":"return  (string, error)",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.UserConfigDir",
+         "contents":"os.UserConfigDir()",
+         "details":"return  (string, error)",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.UserHomeDir",
+         "contents":"os.UserHomeDir()",
+         "details":"return  (string, error)",
+         "annotation":"()"
+      },
+      {
+         "trigger":"os.WriteFile",
+         "contents":"os.WriteFile(${1:name string, data []byte, perm FileMode})",
+         "details":"return  error",
+         "annotation":"(name string, data []byte, perm FileMode)"
+      },
+      {
+         "trigger":"os.ReadDir",
+         "contents":"os.ReadDir(${1:name string})",
+         "details":"return  ([]DirEntry, error)",
+         "annotation":"(name string)"
+      },
+      {
+         "trigger":"os.Create",
+         "contents":"os.Create(${1:name string})",
+         "details":"return  (*File, error)",
+         "annotation":"(name string)"
+      },
+      {
+         "trigger":"os.CreateTemp",
+         "contents":"os.CreateTemp(${1:dir, pattern string})",
+         "details":"return  (*File, error)",
+         "annotation":"(dir, pattern string)"
+      },
+      {
+         "trigger":"os.NewFile",
+         "contents":"os.NewFile(${1:fd uintptr, name string})",
+         "details":"return  *File",
+         "annotation":"(fd uintptr, name string)"
+      },
+      {
+         "trigger":"os.Open",
+         "contents":"os.Open(${1:name string})",
+         "details":"return  (*File, error)",
+         "annotation":"(name string)"
+      },
+      {
+         "trigger":"os.OpenFile",
+         "contents":"os.OpenFile(${1:name string, flag int, perm FileMode})",
+         "details":"return  (*File, error)",
+         "annotation":"(name string, flag int, perm FileMode)"
+      },
+      {
+         "trigger":"os.Lstat",
+         "contents":"os.Lstat(${1:name string})",
+         "details":"return  (FileInfo, error)",
+         "annotation":"(name string)"
+      },
+      {
+         "trigger":"os.Stat",
+         "contents":"os.Stat(${1:name string})",
+         "details":"return  (FileInfo, error)",
+         "annotation":"(name string)"
+      },
+      {
+         "trigger":"os.FindProcess",
+         "contents":"os.FindProcess(${1:pid int})",
+         "details":"return  (*Process, error)",
+         "annotation":"(pid int)"
+      },
+      {
+         "trigger":"os.StartProcess",
+         "contents":"os.StartProcess(${1:name string, argv []string, attr *ProcAttr})",
+         "details":"return  (*Process, error)",
+         "annotation":"(name string, argv []string, attr *ProcAttr)"
+      },
+      {
+         "trigger":"fmt.Append",
+         "contents":"fmt.Append(${1:b []byte, a ...any})",
+         "details":"return  []byte",
+         "annotation":"(b []byte, a ...any)"
+      },
+      {
+         "trigger":"fmt.Appendf",
+         "contents":"fmt.Appendf(${1:b []byte, format string, a ...any})",
+         "details":"return  []byte",
+         "annotation":"(b []byte, format string, a ...any)"
+      },
+      {
+         "trigger":"fmt.Appendln",
+         "contents":"fmt.Appendln(${1:b []byte, a ...any})",
+         "details":"return  []byte",
+         "annotation":"(b []byte, a ...any)"
+      },
+      {
+         "trigger":"fmt.Errorf",
+         "contents":"fmt.Errorf(${1:format string, a ...any})",
+         "details":"return  error",
+         "annotation":"(format string, a ...any)"
+      },
+      {
+         "trigger":"fmt.FormatString",
+         "contents":"fmt.FormatString(${1:state State, verb rune})",
+         "details":"return  string",
+         "annotation":"(state State, verb rune)"
+      },
+      {
+         "trigger":"fmt.Fprint",
+         "contents":"fmt.Fprint(${1:w io.Writer, a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(w io.Writer, a ...any)"
+      },
+      {
+         "trigger":"fmt.Fprintf",
+         "contents":"fmt.Fprintf(${1:w io.Writer, format string, a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(w io.Writer, format string, a ...any)"
+      },
+      {
+         "trigger":"fmt.Fprintln",
+         "contents":"fmt.Fprintln(${1:w io.Writer, a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(w io.Writer, a ...any)"
+      },
+      {
+         "trigger":"fmt.Fscan",
+         "contents":"fmt.Fscan(${1:r io.Reader, a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(r io.Reader, a ...any)"
+      },
+      {
+         "trigger":"fmt.Fscanf",
+         "contents":"fmt.Fscanf(${1:r io.Reader, format string, a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(r io.Reader, format string, a ...any)"
+      },
+      {
+         "trigger":"fmt.Fscanln",
+         "contents":"fmt.Fscanln(${1:r io.Reader, a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(r io.Reader, a ...any)"
+      },
+      {
+         "trigger":"fmt.Print",
+         "contents":"fmt.Print(${1:a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(a ...any)"
+      },
+      {
+         "trigger":"fmt.Printf",
+         "contents":"fmt.Printf(${1:format string, a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(format string, a ...any)"
+      },
+      {
+         "trigger":"fmt.Println",
+         "contents":"fmt.Println(${1:a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(a ...any)"
+      },
+      {
+         "trigger":"fmt.Scan",
+         "contents":"fmt.Scan(${1:a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(a ...any)"
+      },
+      {
+         "trigger":"fmt.Scanf",
+         "contents":"fmt.Scanf(${1:format string, a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(format string, a ...any)"
+      },
+      {
+         "trigger":"fmt.Scanln",
+         "contents":"fmt.Scanln(${1:a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(a ...any)"
+      },
+      {
+         "trigger":"fmt.Sprint",
+         "contents":"fmt.Sprint(${1:a ...any})",
+         "details":"return  string",
+         "annotation":"(a ...any)"
+      },
+      {
+         "trigger":"fmt.Sprintf",
+         "contents":"fmt.Sprintf(${1:format string, a ...any})",
+         "details":"return  string",
+         "annotation":"(format string, a ...any)"
+      },
+      {
+         "trigger":"fmt.Sprintln",
+         "contents":"fmt.Sprintln(${1:a ...any})",
+         "details":"return  string",
+         "annotation":"(a ...any)"
+      },
+      {
+         "trigger":"fmt.Sscan",
+         "contents":"fmt.Sscan(${1:str string, a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(str string, a ...any)"
+      },
+      {
+         "trigger":"fmt.Sscanf",
+         "contents":"fmt.Sscanf(${1:str string, format string, a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(str string, format string, a ...any)"
+      },
+      {
+         "trigger":"fmt.Sscanln",
+         "contents":"fmt.Sscanln(${1:str string, a ...any})",
+         "details":"return  (n int, err error)",
+         "annotation":"(str string, a ...any)"
+      },
+
+{
+    "trigger": "math.Abs",
+    "contents": "math.Abs(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Acos",
+    "contents": "math.Acos(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Acosh",
+    "contents": "math.Acosh(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Asin",
+    "contents": "math.Asin(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Asinh",
+    "contents": "math.Asinh(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Atan",
+    "contents": "math.Atan(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Atan2",
+    "contents": "math.Atan2(${1:y, x float64})",
+    "details": "return  float64",
+    "annotation": "(y, x float64)"
+},
+{
+    "trigger": "math.Atanh",
+    "contents": "math.Atanh(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Cbrt",
+    "contents": "math.Cbrt(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Ceil",
+    "contents": "math.Ceil(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Copysign",
+    "contents": "math.Copysign(${1:f, sign float64})",
+    "details": "return  float64",
+    "annotation": "(f, sign float64)"
+},
+{
+    "trigger": "math.Cos",
+    "contents": "math.Cos(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Cosh",
+    "contents": "math.Cosh(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Dim",
+    "contents": "math.Dim(${1:x, y float64})",
+    "details": "return  float64",
+    "annotation": "(x, y float64)"
+},
+{
+    "trigger": "math.Erf",
+    "contents": "math.Erf(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Erfc",
+    "contents": "math.Erfc(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Erfcinv",
+    "contents": "math.Erfcinv(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Erfinv",
+    "contents": "math.Erfinv(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Exp",
+    "contents": "math.Exp(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Exp2",
+    "contents": "math.Exp2(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Expm1",
+    "contents": "math.Expm1(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.FMA",
+    "contents": "math.FMA(${1:x, y, z float64})",
+    "details": "return  float64",
+    "annotation": "(x, y, z float64)"
+},
+{
+    "trigger": "math.Float32bits",
+    "contents": "math.Float32bits(${1:f float32})",
+    "details": "return  uint32",
+    "annotation": "(f float32)"
+},
+{
+    "trigger": "math.Float32frombits",
+    "contents": "math.Float32frombits(${1:b uint32})",
+    "details": "return  float32",
+    "annotation": "(b uint32)"
+},
+{
+    "trigger": "math.Float64bits",
+    "contents": "math.Float64bits(${1:f float64})",
+    "details": "return  uint64",
+    "annotation": "(f float64)"
+},
+{
+    "trigger": "math.Float64frombits",
+    "contents": "math.Float64frombits(${1:b uint64})",
+    "details": "return  float64",
+    "annotation": "(b uint64)"
+},
+{
+    "trigger": "math.Floor",
+    "contents": "math.Floor(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Frexp",
+    "contents": "math.Frexp(${1:f float64})",
+    "details": "return  (frac float64, exp int)",
+    "annotation": "(f float64)"
+},
+{
+    "trigger": "math.Gamma",
+    "contents": "math.Gamma(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Hypot",
+    "contents": "math.Hypot(${1:p, q float64})",
+    "details": "return  float64",
+    "annotation": "(p, q float64)"
+},
+{
+    "trigger": "math.Ilogb",
+    "contents": "math.Ilogb(${1:x float64})",
+    "details": "return  int",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Inf",
+    "contents": "math.Inf(${1:sign int})",
+    "details": "return  float64",
+    "annotation": "(sign int)"
+},
+{
+    "trigger": "math.IsInf",
+    "contents": "math.IsInf(${1:f float64, sign int})",
+    "details": "return  bool",
+    "annotation": "(f float64, sign int)"
+},
+{
+    "trigger": "math.IsNaN",
+    "contents": "math.IsNaN(${1:f float64})",
+    "details": "return  (is bool)",
+    "annotation": "(f float64)"
+},
+{
+    "trigger": "math.J0",
+    "contents": "math.J0(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.J1",
+    "contents": "math.J1(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Jn",
+    "contents": "math.Jn(${1:n int, x float64})",
+    "details": "return  float64",
+    "annotation": "(n int, x float64)"
+},
+{
+    "trigger": "math.Ldexp",
+    "contents": "math.Ldexp(${1:frac float64, exp int})",
+    "details": "return  float64",
+    "annotation": "(frac float64, exp int)"
+},
+{
+    "trigger": "math.Lgamma",
+    "contents": "math.Lgamma(${1:x float64})",
+    "details": "return  (lgamma float64, sign int)",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Log",
+    "contents": "math.Log(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Log10",
+    "contents": "math.Log10(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Log1p",
+    "contents": "math.Log1p(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Log2",
+    "contents": "math.Log2(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Logb",
+    "contents": "math.Logb(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Max",
+    "contents": "math.Max(${1:x, y float64})",
+    "details": "return  float64",
+    "annotation": "(x, y float64)"
+},
+{
+    "trigger": "math.Min",
+    "contents": "math.Min(${1:x, y float64})",
+    "details": "return  float64",
+    "annotation": "(x, y float64)"
+},
+{
+    "trigger": "math.Mod",
+    "contents": "math.Mod(${1:x, y float64})",
+    "details": "return  float64",
+    "annotation": "(x, y float64)"
+},
+{
+    "trigger": "math.Modf",
+    "contents": "math.Modf(${1:f float64})",
+    "details": "return  (int float64, frac float64)",
+    "annotation": "(f float64)"
+},
+{
+    "trigger": "math.NaN",
+    "contents": "math.NaN()",
+    "details": "return  float64",
+    "annotation": "()"
+},
+{
+    "trigger": "math.Nextafter",
+    "contents": "math.Nextafter(${1:x, y float64})",
+    "details": "return  (r float64)",
+    "annotation": "(x, y float64)"
+},
+{
+    "trigger": "math.Nextafter32",
+    "contents": "math.Nextafter32(${1:x, y float32})",
+    "details": "return  (r float32)",
+    "annotation": "(x, y float32)"
+},
+{
+    "trigger": "math.Pow",
+    "contents": "math.Pow(${1:x, y float64})",
+    "details": "return  float64",
+    "annotation": "(x, y float64)"
+},
+{
+    "trigger": "math.Pow10",
+    "contents": "math.Pow10(${1:n int})",
+    "details": "return  float64",
+    "annotation": "(n int)"
+},
+{
+    "trigger": "math.Remainder",
+    "contents": "math.Remainder(${1:x, y float64})",
+    "details": "return  float64",
+    "annotation": "(x, y float64)"
+},
+{
+    "trigger": "math.Round",
+    "contents": "math.Round(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.RoundToEven",
+    "contents": "math.RoundToEven(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Signbit",
+    "contents": "math.Signbit(${1:x float64})",
+    "details": "return  bool",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Sin",
+    "contents": "math.Sin(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Sincos",
+    "contents": "math.Sincos(${1:x float64})",
+    "details": "return  (sin, cos float64)",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Sinh",
+    "contents": "math.Sinh(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Sqrt",
+    "contents": "math.Sqrt(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Tan",
+    "contents": "math.Tan(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Tanh",
+    "contents": "math.Tanh(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Trunc",
+    "contents": "math.Trunc(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Y0",
+    "contents": "math.Y0(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Y1",
+    "contents": "math.Y1(${1:x float64})",
+    "details": "return  float64",
+    "annotation": "(x float64)"
+},
+{
+    "trigger": "math.Yn",
+    "contents": "math.Yn(${1:n int, x float64})",
+    "details": "return  float64",
+    "annotation": "(n int, x float64)"
+},
+
+{
+    "trigger": "time.After",
+    "contents": "time.After(${1:d Duration})",
+    "details": "return  &lt;-chan Time",
+    "annotation": "(d Duration)"
+},
+{
+    "trigger": "time.Sleep",
+    "contents": "time.Sleep(${1:d Duration})",
+    "details": "return ",
+    "annotation": "(d Duration)"
+},
+{
+    "trigger": "time.Tick",
+    "contents": "time.Tick(${1:d Duration})",
+    "details": "return  &lt;-chan Time",
+    "annotation": "(d Duration)"
+},
+{
+    "trigger": "time.ParseDuration",
+    "contents": "time.ParseDuration(${1:s string})",
+    "details": "return  (Duration, error)",
+    "annotation": "(s string)"
+},
+{
+    "trigger": "time.Since",
+    "contents": "time.Since(${1:t Time})",
+    "details": "return  Duration",
+    "annotation": "(t Time)"
+},
+{
+    "trigger": "time.Until",
+    "contents": "time.Until(${1:t Time})",
+    "details": "return  Duration",
+    "annotation": "(t Time)"
+},
+{
+    "trigger": "time.FixedZone",
+    "contents": "time.FixedZone(${1:name string, offset int})",
+    "details": "return  *Location",
+    "annotation": "(name string, offset int)"
+},
+{
+    "trigger": "time.LoadLocation",
+    "contents": "time.LoadLocation(${1:name string})",
+    "details": "return  (*Location, error)",
+    "annotation": "(name string)"
+},
+{
+    "trigger": "time.LoadLocationFromTZData",
+    "contents": "time.LoadLocationFromTZData(${1:name string, data []byte})",
+    "details": "return  (*Location, error)",
+    "annotation": "(name string, data []byte)"
+},
+{
+    "trigger": "time.NewTicker",
+    "contents": "time.NewTicker(${1:d Duration})",
+    "details": "return  *Ticker",
+    "annotation": "(d Duration)"
+},
+{
+    "trigger": "time.Date",
+    "contents": "time.Date(${1:year int, month Month, day, hour, min, sec, nsec int, loc *Location})",
+    "details": "return  Time",
+    "annotation": "(year int, month Month, day, hour, min, sec, nsec int, loc *Location)"
+},
+{
+    "trigger": "time.Now",
+    "contents": "time.Now()",
+    "details": "return  Time",
+    "annotation": "()"
+},
+{
+    "trigger": "time.Parse",
+    "contents": "time.Parse(${1:layout, value string})",
+    "details": "return  (Time, error)",
+    "annotation": "(layout, value string)"
+},
+{
+    "trigger": "time.ParseInLocation",
+    "contents": "time.ParseInLocation(${1:layout, value string, loc *Location})",
+    "details": "return  (Time, error)",
+    "annotation": "(layout, value string, loc *Location)"
+},
+{
+    "trigger": "time.Unix",
+    "contents": "time.Unix(${1:sec int64, nsec int64})",
+    "details": "return  Time",
+    "annotation": "(sec int64, nsec int64)"
+},
+{
+    "trigger": "time.UnixMicro",
+    "contents": "time.UnixMicro(${1:usec int64})",
+    "details": "return  Time",
+    "annotation": "(usec int64)"
+},
+{
+    "trigger": "time.UnixMilli",
+    "contents": "time.UnixMilli(${1:msec int64})",
+    "details": "return  Time",
+    "annotation": "(msec int64)"
+},
+{
+    "trigger": "time.AfterFunc",
+    "contents": "time.AfterFunc(${1:d Duration, f func(})",
+    "details": "return ) *Timer",
+    "annotation": "(d Duration, f func()"
+},
+{
+    "trigger": "time.NewTimer",
+    "contents": "time.NewTimer(${1:d Duration})",
+    "details": "return  *Timer",
+    "annotation": "(d Duration)"
+},
+   ]
+}
