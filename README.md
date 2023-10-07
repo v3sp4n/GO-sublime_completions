@@ -14,6 +14,10 @@ https://www.sublimetext.com/docs/completions.html
   <li>math</li>
   <li>math/rand</li>
   <li>sort</li>
+  <li>json<li>
+  <li>net/http<li>
+  <li>log<li>
+  <li>regexp<li>
 </ul>
 last update 02.10.2023
 
