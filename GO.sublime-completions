@@ -1434,6 +1434,453 @@
             "contents":"regexp.MustCompilePOSIX(${1:str string})",
             "details":"return  *Regexp",
             "annotation":"(str string)"
-        }
+        },
+        {
+            "trigger": "json.Compact",
+            "contents": "json.Compact(${1:dst *bytes.Buffer, src []byte})",
+            "details": "return  error",
+            "annotation": "(dst *bytes.Buffer, src []byte)"
+        },
+        {
+            "trigger": "json.HTMLEscape",
+            "contents": "json.HTMLEscape(${1:dst *bytes.Buffer, src []byte})",
+            "details": "return ",
+            "annotation": "(dst *bytes.Buffer, src []byte)"
+        },
+        {
+            "trigger": "json.Indent",
+            "contents": "json.Indent(${1:dst *bytes.Buffer, src []byte, prefix, indent string})",
+            "details": "return  error",
+            "annotation": "(dst *bytes.Buffer, src []byte, prefix, indent string)"
+        },
+        {
+            "trigger": "json.Marshal",
+            "contents": "json.Marshal(${1:v any})",
+            "details": "return  ([]byte, error)",
+            "annotation": "(v any)"
+        },
+        {
+            "trigger": "json.MarshalIndent",
+            "contents": "json.MarshalIndent(${1:v any, prefix, indent string})",
+            "details": "return  ([]byte, error)",
+            "annotation": "(v any, prefix, indent string)"
+        },
+        {
+            "trigger": "json.Unmarshal",
+            "contents": "json.Unmarshal(${1:data []byte, v any})",
+            "details": "return  error",
+            "annotation": "(data []byte, v any)"
+        },
+        {
+            "trigger": "json.Valid",
+            "contents": "json.Valid(${1:data []byte})",
+            "details": "return  bool",
+            "annotation": "(data []byte)"
+        },
+        {
+            "trigger": "json.NewDecoder",
+            "contents": "json.NewDecoder(${1:r io.Reader})",
+            "details": "return  *Decoder",
+            "annotation": "(r io.Reader)"
+        },
+        {
+            "trigger": "json.NewEncoder",
+            "contents": "json.NewEncoder(${1:w io.Writer})",
+            "details": "return  *Encoder",
+            "annotation": "(w io.Writer)"
+        },
+
+        {
+            "trigger": "http.CanonicalHeaderKey",
+            "contents": "http.CanonicalHeaderKey(${1:s string})",
+            "details": "return  string",
+            "annotation": "(s string)"
+        },
+        {
+            "trigger": "http.DetectContentType",
+            "contents": "http.DetectContentType(${1:data []byte})",
+            "details": "return  string",
+            "annotation": "(data []byte)"
+        },
+        {
+            "trigger": "http.Error",
+            "contents": "http.Error(${1:w ResponseWriter, error string, code int})",
+            "details": "return ",
+            "annotation": "(w ResponseWriter, error string, code int)"
+        },
+        {
+            "trigger": "http.Handle",
+            "contents": "http.Handle(${1:pattern string, handler Handler})",
+            "details": "return ",
+            "annotation": "(pattern string, handler Handler)"
+        },
+        {
+            "trigger": "http.HandleFunc",
+            "contents": "http.HandleFunc(${1:pattern string, handler func(ResponseWriter, *Request})",
+            "details": "return )",
+            "annotation": "(pattern string, handler func(ResponseWriter, *Request)"
+        },
+        {
+            "trigger": "http.ListenAndServe",
+            "contents": "http.ListenAndServe(${1:addr string, handler Handler})",
+            "details": "return  error",
+            "annotation": "(addr string, handler Handler)"
+        },
+        {
+            "trigger": "http.ListenAndServeTLS",
+            "contents": "http.ListenAndServeTLS(${1:addr, certFile, keyFile string, handler Handler})",
+            "details": "return  error",
+            "annotation": "(addr, certFile, keyFile string, handler Handler)"
+        },
+        {
+            "trigger": "http.MaxBytesReader",
+            "contents": "http.MaxBytesReader(${1:w ResponseWriter, r io.ReadCloser, n int64})",
+            "details": "return  io.ReadCloser",
+            "annotation": "(w ResponseWriter, r io.ReadCloser, n int64)"
+        },
+        {
+            "trigger": "http.NotFound",
+            "contents": "http.NotFound(${1:w ResponseWriter, r *Request})",
+            "details": "return ",
+            "annotation": "(w ResponseWriter, r *Request)"
+        },
+        {
+            "trigger": "http.ParseHTTPVersion",
+            "contents": "http.ParseHTTPVersion(${1:vers string})",
+            "details": "return  (major, minor int, ok bool)",
+            "annotation": "(vers string)"
+        },
+        {
+            "trigger": "http.ParseTime",
+            "contents": "http.ParseTime(${1:text string})",
+            "details": "return  (t time.Time, err error)",
+            "annotation": "(text string)"
+        },
+        {
+            "trigger": "http.ProxyFromEnvironment",
+            "contents": "http.ProxyFromEnvironment(${1:req *Request})",
+            "details": "return  (*url.URL, error)",
+            "annotation": "(req *Request)"
+        },
+        {
+            "trigger": "http.ProxyURL",
+            "contents": "http.ProxyURL(${1:fixedURL *url.URL})",
+            "details": "return  func(*Request) (*url.URL, error)",
+            "annotation": "(fixedURL *url.URL)"
+        },
+        {
+            "trigger": "http.Redirect",
+            "contents": "http.Redirect(${1:w ResponseWriter, r *Request, url string, code int})",
+            "details": "return ",
+            "annotation": "(w ResponseWriter, r *Request, url string, code int)"
+        },
+        {
+            "trigger": "http.Serve",
+            "contents": "http.Serve(${1:l net.Listener, handler Handler})",
+            "details": "return  error",
+            "annotation": "(l net.Listener, handler Handler)"
+        },
+        {
+            "trigger": "http.ServeContent",
+            "contents": "http.ServeContent(${1:w ResponseWriter, req *Request, name string, modtime time.Time, content io.ReadSeeker})",
+            "details": "return ",
+            "annotation": "(w ResponseWriter, req *Request, name string, modtime time.Time, content io.ReadSeeker)"
+        },
+        {
+            "trigger": "http.ServeFile",
+            "contents": "http.ServeFile(${1:w ResponseWriter, r *Request, name string})",
+            "details": "return ",
+            "annotation": "(w ResponseWriter, r *Request, name string)"
+        },
+        {
+            "trigger": "http.ServeTLS",
+            "contents": "http.ServeTLS(${1:l net.Listener, handler Handler, certFile, keyFile string})",
+            "details": "return  error",
+            "annotation": "(l net.Listener, handler Handler, certFile, keyFile string)"
+        },
+        {
+            "trigger": "http.SetCookie",
+            "contents": "http.SetCookie(${1:w ResponseWriter, cookie *Cookie})",
+            "details": "return ",
+            "annotation": "(w ResponseWriter, cookie *Cookie)"
+        },
+        {
+            "trigger": "http.StatusText",
+            "contents": "http.StatusText(${1:code int})",
+            "details": "return  string",
+            "annotation": "(code int)"
+        },
+        {
+            "trigger": "http.FS",
+            "contents": "http.FS(${1:fsys fs.FS})",
+            "details": "return  FileSystem",
+            "annotation": "(fsys fs.FS)"
+        },
+        {
+            "trigger": "http.AllowQuerySemicolons",
+            "contents": "http.AllowQuerySemicolons(${1:h Handler})",
+            "details": "return  Handler",
+            "annotation": "(h Handler)"
+        },
+        {
+            "trigger": "http.FileServer",
+            "contents": "http.FileServer(${1:root FileSystem})",
+            "details": "return  Handler",
+            "annotation": "(root FileSystem)"
+        },
+        {
+            "trigger": "http.MaxBytesHandler",
+            "contents": "http.MaxBytesHandler(${1:h Handler, n int64})",
+            "details": "return  Handler",
+            "annotation": "(h Handler, n int64)"
+        },
+        {
+            "trigger": "http.NotFoundHandler",
+            "contents": "http.NotFoundHandler()",
+            "details": "return  Handler",
+            "annotation": "()"
+        },
+        {
+            "trigger": "http.RedirectHandler",
+            "contents": "http.RedirectHandler(${1:url string, code int})",
+            "details": "return  Handler",
+            "annotation": "(url string, code int)"
+        },
+        {
+            "trigger": "http.StripPrefix",
+            "contents": "http.StripPrefix(${1:prefix string, h Handler})",
+            "details": "return  Handler",
+            "annotation": "(prefix string, h Handler)"
+        },
+        {
+            "trigger": "http.TimeoutHandler",
+            "contents": "http.TimeoutHandler(${1:h Handler, dt time.Duration, msg string})",
+            "details": "return  Handler",
+            "annotation": "(h Handler, dt time.Duration, msg string)"
+        },
+        {
+            "trigger": "http.NewRequest",
+            "contents": "http.NewRequest(${1:method, url string, body io.Reader})",
+            "details": "return  (*Request, error)",
+            "annotation": "(method, url string, body io.Reader)"
+        },
+        {
+            "trigger": "http.NewRequestWithContext",
+            "contents": "http.NewRequestWithContext(${1:ctx context.Context, method, url string, body io.Reader})",
+            "details": "return  (*Request, error)",
+            "annotation": "(ctx context.Context, method, url string, body io.Reader)"
+        },
+        {
+            "trigger": "http.ReadRequest",
+            "contents": "http.ReadRequest(${1:b *bufio.Reader})",
+            "details": "return  (*Request, error)",
+            "annotation": "(b *bufio.Reader)"
+        },
+        {
+            "trigger": "http.Get",
+            "contents": "http.Get(${1:url string})",
+            "details": "return  (resp *Response, err error)",
+            "annotation": "(url string)"
+        },
+        {
+            "trigger": "http.Head",
+            "contents": "http.Head(${1:url string})",
+            "details": "return  (resp *Response, err error)",
+            "annotation": "(url string)"
+        },
+        {
+            "trigger": "http.Post",
+            "contents": "http.Post(${1:url, contentType string, body io.Reader})",
+            "details": "return  (resp *Response, err error)",
+            "annotation": "(url, contentType string, body io.Reader)"
+        },
+        {
+            "trigger": "http.PostForm",
+            "contents": "http.PostForm(${1:url string, data url.Values})",
+            "details": "return  (resp *Response, err error)",
+            "annotation": "(url string, data url.Values)"
+        },
+        {
+            "trigger": "http.ReadResponse",
+            "contents": "http.ReadResponse(${1:r *bufio.Reader, req *Request})",
+            "details": "return  (*Response, error)",
+            "annotation": "(r *bufio.Reader, req *Request)"
+        },
+        {
+            "trigger": "http.NewResponseController",
+            "contents": "http.NewResponseController(${1:rw ResponseWriter})",
+            "details": "return  *ResponseController",
+            "annotation": "(rw ResponseWriter)"
+        },
+        {
+            "trigger": "http.NewFileTransport",
+            "contents": "http.NewFileTransport(${1:fs FileSystem})",
+            "details": "return  RoundTripper",
+            "annotation": "(fs FileSystem)"
+        },
+        {
+            "trigger": "http.NewServeMux",
+            "contents": "http.NewServeMux()",
+            "details": "return  *ServeMux",
+            "annotation": "()"
+        },
+
+        {
+            "trigger": "log.Fatal",
+            "contents": "log.Fatal(${1:v ...any})",
+            "details": "return ",
+            "annotation": "(v ...any)"
+        },
+        {
+            "trigger": "log.Fatalf",
+            "contents": "log.Fatalf(${1:format string, v ...any})",
+            "details": "return ",
+            "annotation": "(format string, v ...any)"
+        },
+        {
+            "trigger": "log.Fatalln",
+            "contents": "log.Fatalln(${1:v ...any})",
+            "details": "return ",
+            "annotation": "(v ...any)"
+        },
+        {
+            "trigger": "log.Flags",
+            "contents": "log.Flags()",
+            "details": "return  int",
+            "annotation": "()"
+        },
+        {
+            "trigger": "log.Output",
+            "contents": "log.Output(${1:calldepth int, s string})",
+            "details": "return  error",
+            "annotation": "(calldepth int, s string)"
+        },
+        {
+            "trigger": "log.Panic",
+            "contents": "log.Panic(${1:v ...any})",
+            "details": "return ",
+            "annotation": "(v ...any)"
+        },
+        {
+            "trigger": "log.Panicf",
+            "contents": "log.Panicf(${1:format string, v ...any})",
+            "details": "return ",
+            "annotation": "(format string, v ...any)"
+        },
+        {
+            "trigger": "log.Panicln",
+            "contents": "log.Panicln(${1:v ...any})",
+            "details": "return ",
+            "annotation": "(v ...any)"
+        },
+        {
+            "trigger": "log.Prefix",
+            "contents": "log.Prefix()",
+            "details": "return  string",
+            "annotation": "()"
+        },
+        {
+            "trigger": "log.Print",
+            "contents": "log.Print(${1:v ...any})",
+            "details": "return ",
+            "annotation": "(v ...any)"
+        },
+        {
+            "trigger": "log.Printf",
+            "contents": "log.Printf(${1:format string, v ...any})",
+            "details": "return ",
+            "annotation": "(format string, v ...any)"
+        },
+        {
+            "trigger": "log.Println",
+            "contents": "log.Println(${1:v ...any})",
+            "details": "return ",
+            "annotation": "(v ...any)"
+        },
+        {
+            "trigger": "log.SetFlags",
+            "contents": "log.SetFlags(${1:flag int})",
+            "details": "return ",
+            "annotation": "(flag int)"
+        },
+        {
+            "trigger": "log.SetOutput",
+            "contents": "log.SetOutput(${1:w io.Writer})",
+            "details": "return ",
+            "annotation": "(w io.Writer)"
+        },
+        {
+            "trigger": "log.SetPrefix",
+            "contents": "log.SetPrefix(${1:prefix string})",
+            "details": "return ",
+            "annotation": "(prefix string)"
+        },
+        {
+            "trigger": "log.Writer",
+            "contents": "log.Writer()",
+            "details": "return  io.Writer",
+            "annotation": "()"
+        },
+        {
+            "trigger": "log.Default",
+            "contents": "log.Default()",
+            "details": "return  *Logger",
+            "annotation": "()"
+        },
+        {
+            "trigger": "log.New",
+            "contents": "log.New(${1:out io.Writer, prefix string, flag int})",
+            "details": "return  *Logger",
+            "annotation": "(out io.Writer, prefix string, flag int)"
+        },
+
+        {
+            "trigger": "regexp.Match",
+            "contents": "regexp.Match(${1:pattern string, b []byte})",
+            "details": "return  (matched bool, err error)",
+            "annotation": "(pattern string, b []byte)"
+        },
+        {
+            "trigger": "regexp.MatchReader",
+            "contents": "regexp.MatchReader(${1:pattern string, r io.RuneReader})",
+            "details": "return  (matched bool, err error)",
+            "annotation": "(pattern string, r io.RuneReader)"
+        },
+        {
+            "trigger": "regexp.MatchString",
+            "contents": "regexp.MatchString(${1:pattern string, s string})",
+            "details": "return  (matched bool, err error)",
+            "annotation": "(pattern string, s string)"
+        },
+        {
+            "trigger": "regexp.QuoteMeta",
+            "contents": "regexp.QuoteMeta(${1:s string})",
+            "details": "return  string",
+            "annotation": "(s string)"
+        },
+        {
+            "trigger": "regexp.Compile",
+            "contents": "regexp.Compile(${1:expr string})",
+            "details": "return  (*Regexp, error)",
+            "annotation": "(expr string)"
+        },
+        {
+            "trigger": "regexp.CompilePOSIX",
+            "contents": "regexp.CompilePOSIX(${1:expr string})",
+            "details": "return  (*Regexp, error)",
+            "annotation": "(expr string)"
+        },
+        {
+            "trigger": "regexp.MustCompile",
+            "contents": "regexp.MustCompile(${1:str string})",
+            "details": "return  *Regexp",
+            "annotation": "(str string)"
+        },
+        {
+            "trigger": "regexp.MustCompilePOSIX",
+            "contents": "regexp.MustCompilePOSIX(${1:str string})",
+            "details": "return  *Regexp",
+            "annotation": "(str string)"
+        },
     ]
 }
